@@ -1,21 +1,19 @@
-Secure Login System
+# Secure Login System
+
 A model of a client-server authentication system that provides secure user registration and login functionality using socket programming and password hashing.
 
-Features
-User Registration: Create new accounts with secure password storage
+## Features
 
-User Login: Authenticate existing users with credentials
+- **User Registration**: Create new accounts with secure password storage
+- **User Login**: Authenticate existing users with credentials
+- **Password Security**: Passwords are hashed using SHA-256 before storage
+- **Multi-client Support**: Server can handle multiple simultaneous connections
+- **Input Validation**: Basic client-side input validation
 
-Password Security: Passwords are hashed using SHA-256 before storage
+## Installation & Usage
 
-Multi-client Support: Server can handle multiple simultaneous connections
-
-Input Validation: Basic client-side input validation
-
-
-Installation & Usage
-1. Start the Server
-bash
+### 1. Start the Server
+```bash
 python server.py
 The server will start listening on localhost:9999
 
