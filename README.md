@@ -15,19 +15,21 @@ A model of a client-server authentication system that provides secure user regis
 ### 1. Start the Server
 ```bash
 python server.py
+```
 The server will start listening on localhost:9999
 
-2. Run the Client
-bash
+### 2. Run the Client
+```bash
 python client.py
-3. Follow the Prompts
+```
+### 3. Follow the Prompts
 Choose 1 to register a new account
 
 Choose 2 to login with existing credentials
 
 Enter your username and password when prompted
 
-How It Works
+## How It Works
 Security Features
 Password Hashing: All passwords are hashed using SHA-256 algorithm before storage
 
@@ -35,29 +37,29 @@ Secure Storage: Plain text passwords are never stored in the database
 
 Network Security: Communication happens over local sockets
 
-Components
-Server (server.py)
+## Components
+### Server (server.py)
 
-Listens for client connections on port 9999
+- Listens for client connections on port 9999
 
-Handles multiple clients simultaneously using threading
+- Handles multiple clients simultaneously using threading
 
-Processes registration and login requests
+- Processes registration and login requests
 
-Interfaces with the database module
+- Interfaces with the database module
 
-Client (client.py)
+### Client (client.py)
 
-Connects to the server
+- Connects to the server
 
-Provides user interface for registration/login
+- Provides user interface for registration/login
 
-Sends credentials to server for processing
+- Sends credentials to server for processing
 
-Database (DataBase.py)
+### Database (DataBase.py)
 
-Manages user data storage in Users_db.txt
+- Manages user data storage in Users_db.txt
 
-Handles password hashing and verification
+- Handles password hashing and verification
 
-Provides functions for user registration and authentication
+- Provides functions for user registration and authentication
